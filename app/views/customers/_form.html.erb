@@ -1,0 +1,11 @@
+<%= simple_form_for @customer do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :email %>
+  <%= f.input :city %>
+  <%= f.input :address %>
+  <%= f.input :zip %>
+  <%= f.input :phone %>
+
+  <%= f.button :submit %>
+<% end %>
