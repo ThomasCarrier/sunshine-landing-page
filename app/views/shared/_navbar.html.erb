@@ -1,0 +1,40 @@
+
+<div class="homepage-navbar">
+  <!-- Logo -->
+  <%= link_to root_path, class: "homepage-navbar-logo" do %>
+    <span>
+    <%= image_tag "sunshine_logo.svg" %>
+    </span>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="float-right hidden-xs hidden-sm">
+  <!-- Language Flag -->
+      <%# if I18n.locale == I18n.default_locale %>
+      <%#= link_to image_tag("portugal.jpg", class: "flag"), :locale=>'pt'%>
+      <%# else %>
+      <%#= link_to image_tag("unitedkingdom.jpg", class: "flag"), :locale=>'en'%>
+      <%# end %>
+
+    <!-- Different navigation if login or not -->
+
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-avatar-group hidden-md hidden-lg float-right">
+    <div class="dropdown text-center">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+         <li>
+              First
+            </li>
+            <li>
+              Second
+            </li>
+            <li>
+              Third
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>

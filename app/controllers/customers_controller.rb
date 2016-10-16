@@ -6,7 +6,7 @@ class CustomersController < ApplicationController
 
   def create
     @customer = Customer.create(customer_params)
-
+    redirect_to root_path
   end
 
   private
