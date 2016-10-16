@@ -1,39 +1,70 @@
-<div class="video-container">
-  <div class="splash-page-box col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-    <h1 class="splash-title"><%=t('.title')%></h1>
-    <h2 class="splash-sub-title text-center"><%=t('.title1')%></h2>
-    <div class="center-button text-center">
-          <%= button_tag(type: 'button', class: 'splash-page-box-btn', id: 'splash-page-box-btn') do %>
-            Join the experiment!
-          <% end %>
-    </div>
+<!-- new code -->
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://www.solarcity.com/sites/all/themes/solarcity/img/video-bg-poster.jpg');">
+  <div class="banner-content">
+    <h1>Some Stuff</h1>
+    <p>Very cool stuff, useful and smart</p>
+    <a class="btn btn-primary btn-lg">GET IT</a>
   </div>
-  <%= render 'shared/video' %>
 </div>
 
-<main class="homepage-main-content">
-
-  <section class="homepage-section" id="how-it-works">
-
-    <div class="container-fluid">
-      <h3 class="text-center section-title orange-text"><%=t('.our_approach')%></h3>
-      <div class="row col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 goal-section">
-        <div class="col-xs-12 col-sm-6 goal-column graphic">
-        <%= image_tag('sunshine2.jpg') %>
+<div class="wrapper-black">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="text-center padded">
+          <h1>Our Mission</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, odio, esse. Beatae unde eveniet vel fuga totam, ratione explicabo non cumque dolor atque, doloremque commodi sed velit molestiae quos, dolores.</p>
         </div>
-
-        <div class="col-xs-12 col-sm-6 goal-column">
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="join-sunshine-form">
-        <%= render 'form' %>
       </div>
     </div>
   </div>
 </div>
+
+<div class="wrapper-lightgray">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="text-center padded">
+          <h1>Join</h1>
+          <%= render 'form' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-green">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="text-center padded">
+          <h1>Team</h1>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="card">
+                  Thomas
+                </div>
+              </div>
+              <div class="col-md-2">
+                JB
+              </div>
+              <div class="col-md-2">
+                Tauan
+              </div>
+              <div class="col-md-2">
+                Quan
+              </div>
+              <div class="col-md-2">
+                Cristine
+              </div>
+              <div class="col-md-2">
+                ...
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
