@@ -2,3 +2,184 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+/* -------------------------------------
+ * CSS code specific to home page
+ * (margin/padding adjustments)
+ * ------------------------------------- */
+
+.homepage-section {
+  padding: 2em 0 4em;
+}
+
+.section-title {
+  margin-bottom: 1em;
+}
+
+.homepage-main-content {
+  margin-top: 100vh;
+}
+
+.homepage-card-icon {
+  color: $orange;
+  font-size: 6em;
+}
+
+#how-it-works {
+  background-color: #f1f1f1;
+  color: $gray-dark;
+}
+
+.goal-section {
+  margin-bottom: 6em;
+}
+
+.goal-column.graphic {
+  margin-top: 10%;
+}
+
+
+.center-button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+h1.splash-title {
+  font-size: 4.5em;
+}
+
+h2.splash-sub-title {
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.splash-page-box p {
+  font-size: 1.2em;
+}
+
+.splash-page-field {
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 0;
+  box-shadow: none;
+  color: white;
+}
+
+.splash-page-field:focus {
+  outline: none;
+  border-color: $orange;
+  box-shadow: none;
+  color: white;
+}
+
+.pac-container {
+  background-color: rgba(0,0,0,0.2);
+  border: none;
+  .pac-item {
+    color: $orange;
+    border: none;
+    line-height: 35px;
+    .pac-item-query {
+      color: white;
+    }
+    .pack-matched {
+      background-color: $orange;
+    }
+    &:hover {
+      background-color:rgba(0,0,0,0.4);
+    }
+  }
+  .pac-item-selected {
+    background-color:rgba(0,0,0,0.4);
+  }
+}
+
+
+// Homepage video
+
+.video-container {
+  height: 100%;
+  top: 0;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('http://www.solarcity.com/sites/all/themes/solarcity/img/video-bg-poster.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade {
+   opacity: .5;
+}
+
+.splash-page-box {
+  font-family: "Open-Sans", "Helvetica", "Arial Narrow", sans-serif;
+  font-weight:100;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  font-size: 1.2rem;
+  margin-top: 7%;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+  text-align: center;
+  color: $orange;
+}
+.splash-page-box-btn {
+  display: block;
+  width: 60%;
+  padding: 0 20px;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  line-height: 40px;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 20em;
+  cursor: pointer;
+  transition: .3s background;
+}
+.splash-page-box-btn:hover {
+   background: $orange;
+   color: white;
+}
+
+.splash-text {
+  font-size: 1.2em;
+}
+
+.splash-page-box .btn-login {
+  display: block;
+  width: 35%;
+  padding: 0 20px;
+  border: none;
+  margin: 1rem auto;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  line-height: 30px;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 20em;
+  cursor: pointer;
+  transition: .3s background;
+  display:inline-block;
+}
+.splash-page-box .btn-login:hover {
+   background: $orange;
+}

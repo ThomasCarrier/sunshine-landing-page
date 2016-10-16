@@ -1,11 +1,24 @@
 <%= simple_form_for @customer do |f| %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :email %>
-  <%= f.input :city %>
-  <%= f.input :address %>
-  <%= f.input :zip %>
-  <%= f.input :phone %>
-
-  <%= f.button :submit %>
+  <div class="form-group">
+    <%= f.input :first_name, {:class => 'form-control'}%>
+  </div>
+  <div class="form-group">
+    <%= f.input :last_name, {class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :email, {class: 'form-control'}%>
+  </div>
+  <div class="form-group">
+    <%= f.input :city, {class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :address, {class: 'form-control'}%>
+  </div>
+  <div class="form-group">
+    <%= f.input :zip, {class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :phone, {class: 'form-control'} %>
+  </div>
+  <%= f.button :submit, value: 'I Want to participate' %>
 <% end %>

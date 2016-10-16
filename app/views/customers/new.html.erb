@@ -1,10 +1,34 @@
 <div class="video-container">
   <div class="splash-page-box col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+    <h1 class="splash-title"><%=t('.title')%></h1>
+    <h2 class="splash-sub-title text-center"><%=t('.title1')%></h2>
+    <div class="center-button text-center">
+          <%= button_tag(type: 'button', class: 'splash-page-box-btn', id: 'splash-page-box-btn') do %>
+            Join the experiment!
+          <% end %>
+    </div>
   </div>
   <%= render 'shared/video' %>
 </div>
 
-<div class="container-fluid">
+<main class="homepage-main-content">
+
+  <section class="homepage-section" id="how-it-works">
+
+    <div class="container-fluid">
+      <h3 class="text-center section-title orange-text"><%=t('.our_approach')%></h3>
+      <div class="row col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 goal-section">
+        <div class="col-xs-12 col-sm-6 goal-column graphic">
+        <%= image_tag('sunshine2.jpg') %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 goal-column">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="join-sunshine-form">
